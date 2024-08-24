@@ -8,13 +8,16 @@ public class UserRepository : IUserRepository
 {
     private List<UserModel> users = new()
     {
-        new UserModel { Id = 3522, Name = "roland", Password = "K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=",
-            FavoriteColor = "blue", Role = "Admin", GoogleId = "101517359495305583936" }
+        new UserModel { Id = 3522, Name = "admin", Password = "8vaQIrtcegupA4jEziTwToaifjt+jQFTXivLKXE3/Ms=",
+            FavoriteColor = "blue", Role = "Admin", GoogleId = "101517359495305583936" },
+        new UserModel { Id = 3522, Name = "user", Password = "8vaQIrtcegupA4jEziTwToaifjt+jQFTXivLKXE3/Ms=",
+            FavoriteColor = "yellow", Role = "User", GoogleId = "101517359495305583936" }
     };
 
     public UserModel? GetByUsernameAndPassword(string username, string password)
     {
         var user = users.SingleOrDefault(u => u.Name == username && u.Password == password.Sha256());
+
         return user;
     }
 
