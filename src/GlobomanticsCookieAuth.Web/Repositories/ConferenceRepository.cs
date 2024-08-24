@@ -1,10 +1,15 @@
-﻿namespace GlobomanticsCookieAuth.Web.Repositories;
+﻿using Globomantics.Data;
+using GlobomanticsCookieAuth.Web.Interfaces;
+
+namespace GlobomanticsCookieAuth.Web.Repositories;
+
 public class ConferenceRepository : IConferenceRepository
 {
     private static List<ConferenceModel> conferences = new() {
           new ConferenceModel { Id = 1, Name = "A Nice Day of Coding", Location = "Remote", Start = DateTime.Now, AttendeeCount = 201 },
           new ConferenceModel { Id = 2, Name = "Hackathon Live", Location = "New York", Start = DateTime.Now.AddDays(50), AttendeeCount = 140  }
         };
+
     public IEnumerable<ConferenceModel> GetAll()
     {
         return conferences;
@@ -21,6 +26,7 @@ public class ConferenceRepository : IConferenceRepository
         conferences.Add(model);
         return model.Id;
     }
+    
 }
 
 

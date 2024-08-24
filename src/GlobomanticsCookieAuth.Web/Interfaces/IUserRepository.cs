@@ -1,4 +1,4 @@
-﻿namespace GlobomanticsCookieAuth.Web.Repositories;
+﻿namespace GlobomanticsCookieAuth.Web.Interfaces;
 
 public interface IUserRepository
 {
