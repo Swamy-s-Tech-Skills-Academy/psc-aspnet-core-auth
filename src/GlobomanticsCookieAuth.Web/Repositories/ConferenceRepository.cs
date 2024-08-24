@@ -26,7 +26,7 @@ public class ConferenceRepository : IConferenceRepository
         conferences.Add(model);
         return model.Id;
     }
-    
+
 }
 
 
