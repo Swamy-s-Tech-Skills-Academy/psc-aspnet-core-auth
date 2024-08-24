@@ -1,4 +1,5 @@
-﻿using GlobomanticsCookieAuth.Web.Interfaces;
+﻿using Globomantics.Data;
+using GlobomanticsCookieAuth.Web.Interfaces;
 
 namespace GlobomanticsCookieAuth.Web.Repositories;
 
