@@ -22,7 +22,7 @@ public static class ServiceConfigurationExtensions
         {
             options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
         })
-            .AddCookie();
+         .AddCookie();
     }
 
 }
