@@ -1,12 +1,12 @@
 ﻿using Globomantics.Models;
-using Globomantics.Repositories;
+using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace Globomantics.Controllers;
+namespace GlobomanticsCookieAuth.Web.Controllers;
 
 public class AccountController : Controller
 {
@@ -64,7 +64,7 @@ public class AccountController : Controller
         // read google identity from google's cookie
         var result = await HttpContext.AuthenticateAsync(
             GoogleDefaults.AuthenticationScheme);
-        
+
         if (result.Principal == null)
             throw new Exception("Could not create a principal");
         var externalClaims = result.Principal.Claims.ToList();
@@ -90,15 +90,15 @@ public class AccountController : Controller
             new Claim("FavoriteColor", user.FavoriteColor)
         };
 
-        var identity = new ClaimsIdentity(claims, 
+        var identity = new ClaimsIdentity(claims,
             CookieAuthenticationDefaults.AuthenticationScheme);
         var principal = new ClaimsPrincipal(identity);
 
         await HttpContext.SignInAsync(
-            CookieAuthenticationDefaults.AuthenticationScheme, 
+            CookieAuthenticationDefaults.AuthenticationScheme,
             principal);
 
-        return LocalRedirect(result.Properties?.Items["returnUrl"] 
+        return LocalRedirect(result.Properties?.Items["returnUrl"]
             ?? "/");
     }
 

@@ -1,8 +1,8 @@
 ﻿using Globomantics.Models;
-using Globomantics.Repositories;
+using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Globomantics.Controllers;
+namespace GlobomanticsCookieAuth.Web.Controllers;
 
 public class ConferenceController : Controller
 {

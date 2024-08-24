@@ -1,9 +1,9 @@
 ﻿using Globomantics.Models;
-using Globomantics.Repositories;
+using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Globomantics.Controllers;
+namespace GlobomanticsCookieAuth.Web.Controllers;
 
 [Authorize]
 public class ProposalController : Controller

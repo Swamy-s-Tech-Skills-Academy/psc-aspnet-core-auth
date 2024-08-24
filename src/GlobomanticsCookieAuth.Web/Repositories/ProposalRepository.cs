@@ -1,6 +1,6 @@
 ﻿using Globomantics.Models;
 
-namespace Globomantics.Repositories;
+namespace GlobomanticsCookieAuth.Web.Repositories;
 
 public class ProposalRepository : IProposalRepository
 {
