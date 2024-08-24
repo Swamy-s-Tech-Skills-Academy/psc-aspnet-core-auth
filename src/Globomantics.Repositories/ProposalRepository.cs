@@ -1,4 +1,7 @@
-﻿namespace Globomantics.Repositories;
+﻿using Globomantics.ApplicationCore.Interfaces;
+using Globomantics.Data;
+
+namespace Globomantics.Repositories;
 
 public class ProposalRepository : IProposalRepository
 {
@@ -16,6 +19,7 @@ public class ProposalRepository : IProposalRepository
     {
         model.Id = proposals.Max(p => p.Id) + 1;
         proposals.Add(model);
+
         return model.Id;
     }
 
@@ -23,6 +27,7 @@ public class ProposalRepository : IProposalRepository
     {
         var proposal = proposals.First(p => p.Id == proposalId);
         proposal.Approved = true;
+        
         return proposal;
     }
 }

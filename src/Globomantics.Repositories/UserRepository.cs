@@ -1,4 +1,7 @@
-﻿namespace Globomantics.Repositories;
+﻿using Globomantics.ApplicationCore.Interfaces;
+using Globomantics.Data;
+
+namespace Globomantics.Repositories;
 
 public class UserRepository : IUserRepository
 {

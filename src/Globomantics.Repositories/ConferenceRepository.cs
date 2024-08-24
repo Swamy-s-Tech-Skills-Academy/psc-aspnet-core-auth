@@ -1,4 +1,7 @@
-﻿namespace Globomantics.Repositories;
+﻿using Globomantics.ApplicationCore.Interfaces;
+using Globomantics.Data;
+
+namespace Globomantics.Repositories;
 
 public class ConferenceRepository : IConferenceRepository
 {
@@ -21,6 +24,7 @@ public class ConferenceRepository : IConferenceRepository
     {
         model.Id = conferences.Max(c => c.Id) + 1;
         conferences.Add(model);
+
         return model.Id;
     }
 
