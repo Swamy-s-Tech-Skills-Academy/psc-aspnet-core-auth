@@ -1,6 +1,7 @@
 using Globomantics.ApplicationCore.Interfaces;
 using Globomantics.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace GlobomanticsCookieAuth.Web.Extensions;
 
@@ -8,8 +9,8 @@ public static class ServiceConfigurationExtensions
 {
     public static void AddConfiguredServices(this WebApplicationBuilder builder)
     {
-        //_ = builder.Services.AddControllersWithViews(options => options.Filters.Add(new AuthorizeFilter()));
-        _ = builder.Services.AddControllersWithViews();
+        _ = builder.Services.AddControllersWithViews(options => options.Filters.Add(new AuthorizeFilter()));
+        //_ = builder.Services.AddControllersWithViews();
 
         _ = builder.Services.AddRazorPages();
 

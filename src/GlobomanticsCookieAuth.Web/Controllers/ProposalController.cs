@@ -1,11 +1,9 @@
 ﻿using Globomantics.ApplicationCore.Interfaces;
 using Globomantics.Data;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GlobomanticsCookieAuth.Web.Controllers;
 
-[Authorize]
 public class ProposalController : Controller
 {
     private readonly IConferenceRepository conferenceRepo;

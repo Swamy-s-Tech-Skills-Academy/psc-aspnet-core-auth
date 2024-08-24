@@ -1,5 +1,6 @@
 ﻿using Globomantics.ApplicationCore.Interfaces;
 using Globomantics.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GlobomanticsCookieAuth.Web.Controllers;
@@ -13,6 +14,7 @@ public class ConferenceController : Controller
         this.repo = repo;
     }
 
+    [AllowAnonymous]
     public IActionResult Index()
     {
         ViewBag.Title = "Organizer - Conference Overview";
