@@ -1,5 +1,4 @@
-﻿using Globomantics.Models;
-using GlobomanticsCookieAuth.Web.Repositories;
+﻿using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GlobomanticsCookieAuth.Web.Controllers;

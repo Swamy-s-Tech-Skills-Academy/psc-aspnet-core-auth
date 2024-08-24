@@ -1,8 +1,6 @@
-﻿using Globomantics.Models;
-using GlobomanticsCookieAuth.Web.Repositories;
+﻿using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
