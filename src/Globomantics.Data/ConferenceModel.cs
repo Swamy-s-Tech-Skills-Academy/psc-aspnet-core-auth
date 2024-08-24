@@ -1,4 +1,4 @@
-﻿namespace Globomantics.Models;
+﻿namespace Globomantics.Data;
 
 public class ConferenceModel
 {
