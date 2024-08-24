@@ -1,4 +1,5 @@
 using Globomantics.ApplicationCore.Interfaces;
+using Globomantics.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);

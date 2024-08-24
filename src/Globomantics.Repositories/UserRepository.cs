@@ -1,4 +1,5 @@
-﻿using Globomantics.ApplicationCore.Interfaces;
+﻿using Globomantics.ApplicationCore.Extensions;
+using Globomantics.ApplicationCore.Interfaces;
 using Globomantics.Data;
 
 namespace Globomantics.Repositories;

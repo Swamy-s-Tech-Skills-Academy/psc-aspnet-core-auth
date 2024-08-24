@@ -27,7 +27,7 @@ public class ProposalRepository : IProposalRepository
     {
         var proposal = proposals.First(p => p.Id == proposalId);
         proposal.Approved = true;
-        
+
         return proposal;
     }
 }

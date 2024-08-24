@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Globomantics.ApplicationCore\Globomantics.ApplicationCore.csproj" />
+    <ProjectReference Include="..\Globomantics.Repositories\Globomantics.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

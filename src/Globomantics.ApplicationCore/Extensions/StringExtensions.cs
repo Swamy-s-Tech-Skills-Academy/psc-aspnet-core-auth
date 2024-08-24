@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace GlobomanticsCookieAuth.Web.Extensions;
+namespace Globomantics.ApplicationCore.Extensions;
 
 public static class StringExtensions
 {
