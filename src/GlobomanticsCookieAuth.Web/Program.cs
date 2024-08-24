@@ -1,5 +1,4 @@
 using Globomantics.ApplicationCore.Interfaces;
-using GlobomanticsCookieAuth.Web.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,17 +10,11 @@ builder.Services.AddScoped<IConferenceRepository, ConferenceRepository>();
 builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-builder.Services.AddAuthentication(o =>
+builder.Services.AddAuthentication(options =>
 {
-    o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    //o.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;           
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 })
     .AddCookie();
-//.AddGoogle(o =>
-//{
-//    o.ClientId = "Your_ClientID";
-//    o.ClientSecret = "Your_Secret";
-//});
 
 var app = builder.Build();
 

@@ -1,8 +1,4 @@
-﻿using Globomantics.ApplicationCore.Interfaces;
-using Globomantics.Data;
-using GlobomanticsCookieAuth.Web.Extensions;
-
-namespace GlobomanticsCookieAuth.Web.Repositories;
+﻿namespace Globomantics.Repositories;
 
 public class UserRepository : IUserRepository
 {

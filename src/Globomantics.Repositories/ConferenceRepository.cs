@@ -1,7 +1,4 @@
-﻿using Globomantics.ApplicationCore.Interfaces;
-using Globomantics.Data;
-
-namespace GlobomanticsCookieAuth.Web.Repositories;
+﻿namespace Globomantics.Repositories;
 
 public class ConferenceRepository : IConferenceRepository
 {
