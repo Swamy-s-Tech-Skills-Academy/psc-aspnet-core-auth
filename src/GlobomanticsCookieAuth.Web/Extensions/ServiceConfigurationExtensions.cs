@@ -8,6 +8,7 @@ public static class ServiceConfigurationExtensions
 {
     public static void AddConfiguredServices(this WebApplicationBuilder builder)
     {
+        //_ = builder.Services.AddControllersWithViews(options => options.Filters.Add(new AuthorizeFilter()));
         _ = builder.Services.AddControllersWithViews();
 
         _ = builder.Services.AddRazorPages();
