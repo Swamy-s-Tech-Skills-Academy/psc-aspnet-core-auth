@@ -1,6 +1,6 @@
 ﻿using Globomantics.Data;
 
-namespace GlobomanticsCookieAuth.Web.Interfaces;
+namespace Globomantics.ApplicationCore.Interfaces;
 
 public interface IProposalRepository
 {

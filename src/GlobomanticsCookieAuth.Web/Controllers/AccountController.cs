@@ -1,5 +1,5 @@
-﻿using Globomantics.Data;
-using GlobomanticsCookieAuth.Web.Interfaces;
+﻿using Globomantics.ApplicationCore.Interfaces;
+using Globomantics.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;

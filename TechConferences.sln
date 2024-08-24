@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobomanticsCookieAuth.Web"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globomantics.Data", "src\Globomantics.Data\Globomantics.Data.csproj", "{18D01980-948E-4A15-B533-254938B8CDCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globomantics.ApplicationCore", "src\Globomantics.ApplicationCore\Globomantics.ApplicationCore.csproj", "{AAA65830-8AA7-43A9-B7F9-B50F94284064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{18D01980-948E-4A15-B533-254938B8CDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D01980-948E-4A15-B533-254938B8CDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D01980-948E-4A15-B533-254938B8CDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA65830-8AA7-43A9-B7F9-B50F94284064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA65830-8AA7-43A9-B7F9-B50F94284064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA65830-8AA7-43A9-B7F9-B50F94284064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA65830-8AA7-43A9-B7F9-B50F94284064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{CF9D3A78-903A-4E37-9B22-65A17B8BE9BD} = {CFB044A6-7069-46D8-A06C-65A85ADDC99A}
 		{978BDC97-BB66-41B3-9B2E-F0C501DD80BC} = {4AA19F32-F5BC-4F06-A94F-6187A90DBCC0}
 		{18D01980-948E-4A15-B533-254938B8CDCF} = {4AA19F32-F5BC-4F06-A94F-6187A90DBCC0}
+		{AAA65830-8AA7-43A9-B7F9-B50F94284064} = {4AA19F32-F5BC-4F06-A94F-6187A90DBCC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2E4D5D5-5110-4C93-B033-21702A6DEBCF}
