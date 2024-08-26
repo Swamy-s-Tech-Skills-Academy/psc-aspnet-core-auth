@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using GlobomanticsCookieAuth.Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace GlobomanticsCookieAuth.Web.Controllers
 {

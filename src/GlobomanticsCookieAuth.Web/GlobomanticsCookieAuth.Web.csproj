@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Globomantics.ApplicationCore\Globomantics.ApplicationCore.csproj" />
+    <ProjectReference Include="..\Globomantics.Repositories\Globomantics.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
